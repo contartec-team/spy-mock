@@ -1,0 +1,57 @@
+{
+  "name": "@contartec-team/spy-mock",
+  "version": "0.1.0",
+  "description": "Spy mock made shorter",
+  "main": "lib/SpyMock",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "lint": "cross-env NODE_ENV=test eslint -c ./.eslintrc.json \"lib/**/*.js\"",
+    "docs": "documentation readme lib/** --section=Docs",
+    "update:docs": "npm run docs && git add README.md && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'",
+    "update-version": "node -e 'require(\"@contartec-team/version-release\").updateVersion()'",
+    "release-version": "node -e 'require(\"@contartec-team/version-release\").releaseVersion()'"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://contartec@github.com/contartec-team/organizations.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "mocks",
+    "spy",
+    "stub",
+    "sinon"
+  ],
+  "author": "contartec",
+  "license": "MIT",
+  "peerDependencies": {
+    "sinon": "^9.0.2"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "documentation": "^11.0.0",
+    "eslint": "^5.16.0",
+    "husky": "^3.0.5",
+    "nyc": "^14.1.1",
+    "sinon": "^9.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm run update:docs"
+    }
+  },
+  "nyc": {
+    "exclude": [
+      "*.js",
+      "tests",
+      "configs"
+    ]
+  }
+}
