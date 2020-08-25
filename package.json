@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://contartec@github.com/contartec-team/organizations.git"
+    "url": "git+https://contartec@github.com/contartec-team/spy-mock.git"
   },
   "keywords": [
     "node",
@@ -33,9 +33,9 @@
   "peerDependencies": {
     "sinon": "^9.0.2"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@contartec-team/git-hooks": "git+https://fed9850abdf8b499b416bfd1d3f92ec3a38dee6d:x-oauth-basic@github.com/contartec-team/git-hooks.git",
     "documentation": "^11.0.0",
     "eslint": "^5.16.0",
     "husky": "^3.0.5",
