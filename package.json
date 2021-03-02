@@ -39,7 +39,7 @@
     "@contartec-team/git-hooks": "git+https://github.com/contartec-team/git-hooks.git",
     "documentation": "^11.0.0",
     "eslint": "^5.16.0",
-    "husky": "^3.0.5",
+    "husky": "^5.1.3",
     "nyc": "^14.1.1",
     "sinon": "^9.0.2"
   },
