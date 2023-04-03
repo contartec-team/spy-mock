@@ -1,5 +1,5 @@
 {
-  "name": "@contartec-team/spy-mock",
+  "name": "@kajoo-team/spy-mock",
   "version": "0.2.1",
   "description": "Spy mock made shorter",
   "main": "lib/SpyMock",
@@ -10,15 +10,15 @@
     "lint": "cross-env NODE_ENV=test eslint -c ./.eslintrc.json \"lib/**/*.js\"",
     "docs": "documentation readme lib/** --section=Docs",
     "update:docs": "npm run docs && git add README.md && git diff-index --quiet HEAD || git commit -m 'Updating `docs`'",
-    "update-version": "node -e 'require(\"@contartec-team/version-release\").updateVersion()'",
-    "release-version": "node -e 'require(\"@contartec-team/version-release\").releaseVersion()'"
+    "update-version": "node -e 'require(\"@kajoo-team/version-release\").updateVersion()'",
+    "release-version": "node -e 'require(\"@kajoo-team/version-release\").releaseVersion()'"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://contartec@github.com/contartec-team/spy-mock.git"
+    "url": "git+https://kajoo@github.com/kajoo-team/spy-mock.git"
   },
   "keywords": [
     "node",
@@ -28,15 +28,15 @@
     "stub",
     "sinon"
   ],
-  "author": "contartec",
+  "author": "kajoo",
   "license": "MIT",
   "peerDependencies": {
     "sinon": "^9.0.2"
   },
   "dependencies": {},
   "devDependencies": {
-    "@contartec-team/version-release": "git+https://github.com/contartec-team/version-release.git",
-    "@contartec-team/git-hooks": "git+https://github.com/contartec-team/git-hooks.git",
+    "@kajoo-team/version-release": "git+https://github.com/kajoo-team/version-release.git",
+    "@kajoo-team/git-hooks": "git+https://github.com/kajoo-team/git-hooks.git",
     "documentation": "^11.0.0",
     "eslint": "^5.16.0",
     "husky": "^3.0.5",
